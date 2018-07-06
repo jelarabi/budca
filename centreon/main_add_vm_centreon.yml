@@ -1,0 +1,6 @@
+---
+- name: Add vm in centreon
+  hosts: all:!localhost
+  roles:
+    - vm_add_centreon
+

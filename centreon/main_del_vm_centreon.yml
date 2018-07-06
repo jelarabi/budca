@@ -1,0 +1,6 @@
+---
+- name: Delete Vm in centreon
+  hosts: all:!localhost
+  roles:
+    - vm_del_centreon
+

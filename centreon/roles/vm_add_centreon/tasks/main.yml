@@ -1,0 +1,14 @@
+---
+- name: Add host in centreon 
+  vm_add_centreon:
+    ip_centreon:  '{{ ip_centreon }}'
+    headers:
+        Content-Type: "application/json"
+        centreon-auth-token: ""
+    hostname: '{{vm_name}}'
+    os: '{{ os }}'
+    ip: '{{ vm_ip }}'
+    user: '{{ user }}'
+    password: '{{ password }}'
+  delegate_to: localhost
+

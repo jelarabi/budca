@@ -1,0 +1,12 @@
+---
+- name: Del host in centreon 
+  vm_del_centreon:
+    ip_centreon:  '{{ ip_centreon }}'
+    headers:
+        Content-Type: "application/json"
+        centreon-auth-token: ""
+    hostname: '{{vm_name}}'
+    user: '{{ user }}'
+    password: '{{ password }}'
+  delegate_to: localhost
+
