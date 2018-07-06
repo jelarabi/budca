@@ -1,5 +1,5 @@
 ---
-ip_centreon: "172.112.11.2"
+ip_centreon: "centreon.budcca-demo.lab"
 vm_name: "{{ ansible_hostname }}"
 vm_ip: "{{ ansible_eth0.ipv4.address }}"
 user: "admin"
